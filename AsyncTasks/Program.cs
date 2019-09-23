@@ -18,7 +18,7 @@ class Program
             int randomNumber = random.Next(0, 3000);
 
             var task = Task.Factory.StartNew(() => { Imprimir("Tarea "+(i+1), randomNumber); });
-            Thread.Sleep(10);
+            Thread.Sleep(100);
             tasks[i] = task ;
         }
 
